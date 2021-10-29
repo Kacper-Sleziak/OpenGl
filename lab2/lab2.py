@@ -117,14 +117,13 @@ def render_exercise_4():
     draw_carpet_part(x + a, y, a, b)
     draw_carpet_part(x + 2 * a, y, a, b)
 
-    draw_carpet_part(x, y, a, b)
     draw_carpet_part(x, y + b, a, b)
     draw_carpet_part(x, y + 2 * b, a, b)
 
     draw_carpet_part(x + a, y + 2 * b, a, b)
+    draw_carpet_part(x + 2 * a, y + b, a, b)
     draw_carpet_part(x + 2 * a, y + 2 * b, a, b)
 
-    draw_carpet_part(x + 2 * a, y + b, a, b)
 
 
 def update_viewport(window, width, height):
@@ -175,7 +174,7 @@ def main():
     color_pack2 = (r2, g2, b2)
 
     while not glfwWindowShouldClose(window):
-        # render_exercise_3(x=0, y=0, a=50, b=30, d=3, color_pack1=color_pack1, color_pack2=color_pack2)
+        #render_exercise_3(x=0, y=0, a=50, b=30, d=3, color_pack1=color_pack1, color_pack2=color_pack2)
         render_exercise_4()
         glfwSwapBuffers(window)
         glfwWaitEvents()
